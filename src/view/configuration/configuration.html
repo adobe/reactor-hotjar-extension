@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Extension Configuration</title>
+  </head>
+
+  <style>
+    input:invalid {
+      border: 1px solid red;
+    }
+  </style>
+  <body>
+    <label>
+      Site ID
+      <input id="siteId" type="number" required autofocus>
+    </label>
+
+    <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+    <script>
+      var siteIdInput = document.querySelector('#siteId');
+
+      window.extensionBridge.register({
+        init: function(info) {
+          if (info.settings) {
+            siteIdInput.value = info.settings.siteId
+          }
+        },
+
+        getSettings: function() {
+          return {
+            siteId: siteIdInput.value
+          }
+        },
+
+        validate: function() {
+          return siteIdInput.checkValidity();
+        }
+      });
+    </script>
+  </body>
+</html>
