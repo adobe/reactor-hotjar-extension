@@ -15,5 +15,5 @@
       "properties": {}
     }
   },
-  "main": "./src/lib/helpers/trackingCode.js"
+  "main": "src/lib/helpers/trackingCode.js"
 }
