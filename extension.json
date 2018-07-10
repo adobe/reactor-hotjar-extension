@@ -2,7 +2,7 @@
   "displayName": "Hotjar",
   "name": "hotjar",
   "version": "1.0.0",
-  "description": "Follow where your users go while visiting you site, and see what they interact with the most. ",
+  "description": "Follow the navigation of your users while they visit your site, and see what they interact with the most.",
   "author": {
     "name": "Celeste Robinson"
   },
