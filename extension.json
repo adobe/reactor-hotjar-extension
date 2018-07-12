@@ -3,6 +3,7 @@
   "name": "hotjar",
   "version": "1.0.0",
   "description": "Follow the navigation of your users while they visit your site, and see what they interact with the most.",
+  "iconPath": "hotjar-icon.svg",
   "author": {
     "name": "Celeste Robinson"
   },
