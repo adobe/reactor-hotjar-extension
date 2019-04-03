@@ -2,22 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../spectrum-css/spectrum-light.css">
     <title>Extension Configuration</title>
   </head>
-
-  <style>
-    input:invalid {
-      border: 1px solid red;
-    }
-  </style>
-  <body>
-    <h3>Add Hotjar capabilities to your site.</h3>
-    <p>Enter your site ID below.</p>
-    <label>
-      Site ID
-      <input id="siteId" type="number" required autofocus>
-    </label>
-    <p>If you are unfamiliar with Hotjar, learn more <a href="https://www.hotjar.com/" target="_blank">here</a>.</p>
+  
+  <body class="spectrum spectrum--light">
+    <h1 class="spectrum-Heading--pageTitle">Add Hotjar capabilities to your site.</h1>
+    <label class="spectrum-FieldLabel">Site ID (Numbers only)</label>
+    <input class="spectrum-Textfield" id="siteId" type="number" placeholder="ex. 123456" autofocus>
+    <p>If you are unfamiliar with Hotjar, learn more <a class="spectrum-Link" href="https://www.hotjar.com/" target="_blank">here</a>.</p>
 
     <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
     <script>
@@ -37,7 +30,13 @@
         },
 
         validate: function() {
-          return siteIdInput.checkValidity();
+          if (!siteIdInput.value) { 
+            siteIdInput.classList.add("is-invalid");
+          } else {
+            siteId.classList.remove("is-invalid");
+            siteId.classList.add("is-valid");
+          }
+          return Boolean(siteIdInput.value);
         }
       });
     </script>

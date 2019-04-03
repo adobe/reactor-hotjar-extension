@@ -5,7 +5,7 @@
   "description": "Follow the navigation of your users while they visit your site, and see what they interact with the most.",
   "iconPath": "hotjar-icon.svg",
   "author": {
-    "name": "Celeste Robinson"
+    "name": "Adobe"
   },
   "viewBasePath": "src/view/",
   "configuration": {
@@ -13,7 +13,12 @@
     "schema": {
       "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
-      "properties": {}
+      "properties": {
+        "siteId": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
     }
   },
   "main": "src/lib/helpers/trackingCode.js",

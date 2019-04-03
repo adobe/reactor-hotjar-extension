@@ -5,7 +5,7 @@ module.exports = {
     "hotjar": {
       "displayName": "Hotjar",
       "settings": {
-        "siteId": "944579"
+        "siteId": "930763"
       }
     }
   },
@@ -13,9 +13,9 @@ module.exports = {
     "settings": {}
   },
   "buildInfo": {
-    "turbineVersion": "25.1.0",
-    "turbineBuildDate": "2018-07-11T16:30:07.846Z",
-    "buildDate": "2018-07-11T16:30:07.846Z",
+    "turbineVersion": "25.4.0",
+    "turbineBuildDate": "2019-04-03T22:03:29.273Z",
+    "buildDate": "2019-04-03T22:03:29.273Z",
     "environment": "development"
   }
 }

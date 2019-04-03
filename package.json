@@ -1,0 +1,24 @@
+{
+  "name": "hotjar",
+  "version": "1.0.0",
+  "description": "This extension allows Launch users to easily add the Hotjar tag to their site.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "mkdir -p src/view/spectrum-css/ && cp node_modules/@adobe/spectrum-css/dist/standalone/spectrum-light.css src/view/spectrum-css/spectrum-light.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celesterobinson/extension-hotjar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celesterobinson/extension-hotjar/issues"
+  },
+  "homepage": "https://github.com/celesterobinson/extension-hotjar#readme",
+  "dependencies": {
+    "@adobe/spectrum-css": "^2.9.0",
+    "postinstall": "^0.4.2"
+  }
+}
