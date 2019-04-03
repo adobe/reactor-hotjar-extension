@@ -15,7 +15,7 @@
       "type": "object",
       "properties": {
         "siteId": {
-          "type": "number",
+          "type": "string",
           "minLength": 1
         }
       }
