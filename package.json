@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/celesterobinson/extension-hotjar.git"
+    "url": "git+https://github.com/Adobe-Marketing-Cloud/reactor-hotjar-extension.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/celesterobinson/extension-hotjar/issues"
+    "url": "https://github.com/Adobe-Marketing-Cloud/reactor-hotjar-extension/issues"
   },
-  "homepage": "https://github.com/celesterobinson/extension-hotjar#readme",
+  "homepage": "https://github.com/Adobe-Marketing-Cloud/reactor-hotjar-extension#readme",
   "dependencies": {
     "@adobe/spectrum-css": "^2.9.0",
     "postinstall": "^0.4.2"

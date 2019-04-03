@@ -18,7 +18,9 @@
           "type": "string",
           "minLength": 1
         }
-      }
+      },
+      "required": ["siteId"],
+      "additionalProperties": false
     }
   },
   "main": "src/lib/helpers/trackingCode.js",
