@@ -16,7 +16,7 @@ To get started:
 
 To run a sandbox where you can manually test your changes (manipulate the sandbox directory as desired), run the following command:
 
-`npm run sandbox`
+`npx @adobe/reactor-sandbox`
 
 ## Licensing
 
